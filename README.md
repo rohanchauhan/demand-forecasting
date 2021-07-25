@@ -4,11 +4,11 @@
 1. Clone the repository or download the zip file and go inside the directory using Command Prompt/Terminal.
 2. Make a python3 virtual environment.
 ```python
-python3 -m venv .maersk-env
+python3 -m venv time-env
 ```
 3. Activate the virtual environment.
 ```python
-source .maersk-env/bin/activate
+source time-env/bin/activate
 ```
 4. Install the requirements.
 ```python
