@@ -1,4 +1,4 @@
-# Time series Challenge
+# Demand Forecasting for hierarchical time series data
 
 #### Installation Instructions:
 1. Clone the repository or download the zip file and go inside the directory using Command Prompt/Terminal.
@@ -27,11 +27,11 @@ I trained 4 classes of models during Experiment:
 2. Top Down Approach - Not used due to wrong assumption
 3. Middle Out Approach - Not used due to lack of heirarchy
 
-This approach performed best because it was based on the wrong assumption that we had to forecast monthly sum of Sourcing cost. After realising the wrong assumption, I tried to forecast monthly mean which gave this result. Also, the bottom up approach used for Grouped Time Series utilises autoarima to fit the models. After outlier removals, the data at bottom level(i.e. individual product level) became stationary and therefore ARIMA models were too complex for data and performed poorly.
+This approach performed worst because it was based on the wrong assumption that we had to forecast monthly sum of Sourcing cost. After realising the wrong assumption, I tried to forecast monthly mean which gave this result. Also, the bottom up approach used for Grouped Time Series utilises autoarima to fit the models. After outlier removals, the data at bottom level(i.e. individual product level) became stationary and therefore ARIMA models were too complex for data and performed poorly.
 
 **DEEP LEARNING** `NOTEBOOK NOT INCLUDED`
 
-LSTM are used to model long range dependencies and hence are suitable for time series forecasting. I faced problems in using this approach due to categorical columns. I read about utilising categorical variables as an auxilary input. However, due to time constraints, wasn't able to do so.
+LSTM are used to model long range dependencies and hence are suitable for time series forecasting. 
 
 **TREE BASED MODELS** `NOTEBOOK INCLUDED`
 1. RMSE of DecisionTreeRegressor: 34.12919305031901
